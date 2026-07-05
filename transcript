@@ -1,6 +1,6 @@
-# vsim -coverage -c work.ram_tb "+Random" -do "run -all; coverage save coverage.ucdb; quit -f" 
-# Start time: 23:40:54 on Jul 05,2026
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim -coverage -c work.ram_tb "+Random" -do "run -all; coverage save -onexit coverage.ucdb; quit -f" 
+# Start time: 01:08:18 on Jul 06,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: write_test_case.sv(8): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 # ** Warning: read_test_case.sv(8): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 # ** Warning: ram_sim_r_w.sv(8): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
@@ -543,6 +543,786 @@
 #  Read Enable    : 1
 #  Address        : 0x1e (30)
 #  Write Data     : 0x7d
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : mid_range
+#  Write Enable   : 1
+#  Read Enable    : 1
+#  Address        : 0x17 (23)
+#  Write Data     : 0x29
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : READ
+#  Address Range  : upper_range
+#  Write Enable   : 1
+#  Read Enable    : 1
+#  Address        : 0x1a (26)
+#  Write Data     : 0x62
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : upper_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x1d (29)
+#  Write Data     : 0x3f
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : mid_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x17 (23)
+#  Write Data     : 0x29
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x2 (2)
+#  Write Data     : 0xaa
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : mid_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x18 (24)
+#  Write Data     : 0x13
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : SIM_RW
+#  Address Range  : mid_range
+#  Write Enable   : 1
+#  Read Enable    : 1
+#  Address        : 0x18 (24)
+#  Write Data     : 0xea
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : upper_range
+#  Write Enable   : 1
+#  Read Enable    : 1
+#  Address        : 0x1c (28)
+#  Write Data     : 0xd6
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : mid_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x18 (24)
+#  Write Data     : 0xeb
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : READ
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0xa (10)
+#  Write Data     : 0x29
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : SIM_RW
+#  Address Range  : mid_range
+#  Write Enable   : 1
+#  Read Enable    : 1
+#  Address        : 0x15 (21)
+#  Write Data     : 0x2e
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : mid_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x11 (17)
+#  Write Data     : 0x27
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : mid_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x13 (19)
+#  Write Data     : 0x8b
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0xb (11)
+#  Write Data     : 0xf6
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : upper_range
+#  Write Enable   : 1
+#  Read Enable    : 1
+#  Address        : 0x1c (28)
+#  Write Data     : 0x9b
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : upper_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x1f (31)
+#  Write Data     : 0xf4
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : mid_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x10 (16)
+#  Write Data     : 0xd3
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : SIM_RW
+#  Address Range  : upper_range
+#  Write Enable   : 1
+#  Read Enable    : 1
+#  Address        : 0x1b (27)
+#  Write Data     : 0xfc
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x4 (4)
+#  Write Data     : 0xac
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : mid_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x12 (18)
+#  Write Data     : 0x89
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : SIM_RW
+#  Address Range  : upper_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x1f (31)
+#  Write Data     : 0x37
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0xd (13)
+#  Write Data     : 0x3
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : upper_range
+#  Write Enable   : 1
+#  Read Enable    : 1
+#  Address        : 0x1c (28)
+#  Write Data     : 0x1a
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0xb (11)
+#  Write Data     : 0xd9
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x7 (7)
+#  Write Data     : 0x15
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : mid_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x14 (20)
+#  Write Data     : 0x24
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : mid_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x13 (19)
+#  Write Data     : 0xb8
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : SIM_RW
+#  Address Range  : upper_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x1e (30)
+#  Write Data     : 0x3f
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : mid_range
+#  Write Enable   : 1
+#  Read Enable    : 1
+#  Address        : 0x19 (25)
+#  Write Data     : 0xd6
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : mid_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x18 (24)
+#  Write Data     : 0xd2
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : mid_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x10 (16)
+#  Write Data     : 0x26
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : upper_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x1c (28)
+#  Write Data     : 0xa4
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x4 (4)
+#  Write Data     : 0x1b
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : mid_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x19 (25)
+#  Write Data     : 0xdd
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 1
+#  Address        : 0x2 (2)
+#  Write Data     : 0x4d
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0xf (15)
+#  Write Data     : 0xfb
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0xf (15)
+#  Write Data     : 0xca
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : SIM_RW
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0xd (13)
+#  Write Data     : 0x28
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : SIM_RW
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x2 (2)
+#  Write Data     : 0x30
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : SIM_RW
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x9 (9)
+#  Write Data     : 0x40
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : SIM_RW
+#  Address Range  : upper_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x1d (29)
+#  Write Data     : 0x44
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : upper_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x1c (28)
+#  Write Data     : 0x1b
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 1
+#  Address        : 0x6 (6)
+#  Write Data     : 0x2b
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : mid_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x14 (20)
+#  Write Data     : 0x54
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : mid_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x17 (23)
+#  Write Data     : 0xd3
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : SIM_RW
+#  Address Range  : upper_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x1f (31)
+#  Write Data     : 0x75
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : upper_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x1e (30)
+#  Write Data     : 0xdd
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0xf (15)
+#  Write Data     : 0xdc
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : READ
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 1
+#  Address        : 0x9 (9)
+#  Write Data     : 0xc0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : READ
+#  Address Range  : upper_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x1a (26)
+#  Write Data     : 0x54
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : mid_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x19 (25)
+#  Write Data     : 0x63
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x2 (2)
+#  Write Data     : 0xb0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : mid_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x13 (19)
+#  Write Data     : 0x7e
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0xb (11)
+#  Write Data     : 0x37
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : WRITE
+#  Address Range  : mid_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x12 (18)
+#  Write Data     : 0xdd
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : READ
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x1 (1)
+#  Write Data     : 0x45
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0xe (14)
+#  Write Data     : 0xcc
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : upper_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x1a (26)
+#  Write Data     : 0x2d
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x0 (0)
+#  Write Data     : 0x89
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  FULL RANDOM
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x8 (8)
+#  Write Data     : 0x97
 #  Read Data      : 0x0
 # ==============================================================
 # 
@@ -1688,6 +2468,7 @@
 # ==============================================================
 # 
 # [805] Driver: Waiting for packet...
+# [805] Driver: Packet received
 # 
 # ==============================================================
 #                  From Monitor
@@ -1730,6 +2511,10 @@
 #  Read Data      : 0x7d
 # ==============================================================
 # 
+# [825] Driver: Waiting for packet...
+# [825] Driver: Packet received
+# [845] Driver: Waiting for packet...
+# [845] Driver: Packet received
 # 
 # ==============================================================
 #                  From Monitor
@@ -1738,18 +2523,18 @@
 #  Address Range  : lower_range
 #  Write Enable   : 1
 #  Read Enable    : 1
-#  Address        : 0x1e (30)
-#  Write Data     : 0x7d
-#  Read Data      : 0x7d
+#  Address        : 0x17 (23)
+#  Write Data     : 0x29
+#  Read Data      : 0x29
 # ==============================================================
 # 
 # 
 # ==============================================================
 # [TEST 28] SIMULTANEOUS READ/WRITE
-# Address       : 30
-# Old Data      : 0x7d
-# Write Data    : 0x7d
-# Read Data     : 0x7d
+# Address       : 23
+# Old Data      : 0x0
+# Write Data    : 0x29
+# Read Data     : 0x29
 # STATUS        : PASS
 # ==============================================================
 # 
@@ -1767,11 +2552,58 @@
 #  Address Range  : lower_range
 #  Write Enable   : 1
 #  Read Enable    : 1
-#  Address        : 0x1e (30)
-#  Write Data     : 0x7d
-#  Read Data      : 0x7d
+#  Address        : 0x17 (23)
+#  Write Data     : 0x29
+#  Read Data      : 0x29
 # ==============================================================
 # 
+# [865] Driver: Waiting for packet...
+# [865] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 29] IDLE OPERATION
+# Address       : 0
+# Expected Data : 0x0
+# Read Data     : 0x0
+# STATUS        : IDLE
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 29
+# Passed      : 21
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# [885] Driver: Waiting for packet...
+# [885] Driver: Packet received
+# [905] Driver: Waiting for packet...
+# [905] Driver: Packet received
 # 
 # ==============================================================
 #                  From Monitor
@@ -1779,24 +2611,22 @@
 #  Operation      : IDLE
 #  Address Range  : lower_range
 #  Write Enable   : 1
-#  Read Enable    : 1
-#  Address        : 0x1e (30)
-#  Write Data     : 0x7d
-#  Read Data      : 0x7d
+#  Read Enable    : 0
+#  Address        : 0x17 (23)
+#  Write Data     : 0x29
+#  Read Data      : 0x0
 # ==============================================================
 # 
 # 
 # ==============================================================
-# [TEST 29] SIMULTANEOUS READ/WRITE
-# Address       : 30
-# Old Data      : 0x7d
-# Write Data    : 0x7d
-# Read Data     : 0x7d
-# STATUS        : PASS
+# [TEST 30] WRITE OPERATION
+# Address       : 23
+# Write Data    : 0x29
+# STATUS        : MEMORY UPDATED
 # ==============================================================
 # 
 # *************** SCOREBOARD SUMMARY ***************
-# Total Tests : 29
+# Total Tests : 30
 # Passed      : 22
 # Failed      : 1
 # **************************************************
@@ -1808,12 +2638,14 @@
 #  Operation      : IDLE
 #  Address Range  : lower_range
 #  Write Enable   : 1
-#  Read Enable    : 1
-#  Address        : 0x1e (30)
-#  Write Data     : 0x7d
-#  Read Data      : 0x7d
+#  Read Enable    : 0
+#  Address        : 0x17 (23)
+#  Write Data     : 0x29
+#  Read Data      : 0x0
 # ==============================================================
 # 
+# [925] Driver: Waiting for packet...
+# [925] Driver: Packet received
 # 
 # ==============================================================
 #                  From Monitor
@@ -1821,24 +2653,22 @@
 #  Operation      : IDLE
 #  Address Range  : lower_range
 #  Write Enable   : 1
-#  Read Enable    : 1
-#  Address        : 0x1e (30)
-#  Write Data     : 0x7d
-#  Read Data      : 0x7d
+#  Read Enable    : 0
+#  Address        : 0x18 (24)
+#  Write Data     : 0x13
+#  Read Data      : 0x0
 # ==============================================================
 # 
 # 
 # ==============================================================
-# [TEST 30] SIMULTANEOUS READ/WRITE
-# Address       : 30
-# Old Data      : 0x7d
-# Write Data    : 0x7d
-# Read Data     : 0x7d
-# STATUS        : PASS
+# [TEST 31] WRITE OPERATION
+# Address       : 24
+# Write Data    : 0x13
+# STATUS        : MEMORY UPDATED
 # ==============================================================
 # 
 # *************** SCOREBOARD SUMMARY ***************
-# Total Tests : 30
+# Total Tests : 31
 # Passed      : 23
 # Failed      : 1
 # **************************************************
@@ -1850,12 +2680,16 @@
 #  Operation      : IDLE
 #  Address Range  : lower_range
 #  Write Enable   : 1
-#  Read Enable    : 1
-#  Address        : 0x1e (30)
-#  Write Data     : 0x7d
-#  Read Data      : 0x7d
+#  Read Enable    : 0
+#  Address        : 0x18 (24)
+#  Write Data     : 0x13
+#  Read Data      : 0x0
 # ==============================================================
 # 
+# [945] Driver: Waiting for packet...
+# [945] Driver: Packet received
+# [965] Driver: Waiting for packet...
+# [965] Driver: Packet received
 # 
 # ==============================================================
 #                  From Monitor
@@ -1864,23 +2698,23 @@
 #  Address Range  : lower_range
 #  Write Enable   : 1
 #  Read Enable    : 1
-#  Address        : 0x1e (30)
-#  Write Data     : 0x7d
-#  Read Data      : 0x7d
+#  Address        : 0x18 (24)
+#  Write Data     : 0xea
+#  Read Data      : 0xea
 # ==============================================================
 # 
 # 
 # ==============================================================
-# [TEST 31] SIMULTANEOUS READ/WRITE
-# Address       : 30
-# Old Data      : 0x7d
-# Write Data    : 0x7d
-# Read Data     : 0x7d
+# [TEST 32] SIMULTANEOUS READ/WRITE
+# Address       : 24
+# Old Data      : 0x13
+# Write Data    : 0xea
+# Read Data     : 0xea
 # STATUS        : PASS
 # ==============================================================
 # 
 # *************** SCOREBOARD SUMMARY ***************
-# Total Tests : 31
+# Total Tests : 32
 # Passed      : 24
 # Failed      : 1
 # **************************************************
@@ -1893,11 +2727,13 @@
 #  Address Range  : lower_range
 #  Write Enable   : 1
 #  Read Enable    : 1
-#  Address        : 0x1e (30)
-#  Write Data     : 0x7d
-#  Read Data      : 0x7d
+#  Address        : 0x18 (24)
+#  Write Data     : 0xea
+#  Read Data      : 0xea
 # ==============================================================
 # 
+# [985] Driver: Waiting for packet...
+# [985] Driver: Packet received
 # 
 # ==============================================================
 #                  From Monitor
@@ -1905,24 +2741,22 @@
 #  Operation      : IDLE
 #  Address Range  : lower_range
 #  Write Enable   : 1
-#  Read Enable    : 1
-#  Address        : 0x1e (30)
-#  Write Data     : 0x7d
-#  Read Data      : 0x7d
+#  Read Enable    : 0
+#  Address        : 0x18 (24)
+#  Write Data     : 0xeb
+#  Read Data      : 0xd6
 # ==============================================================
 # 
 # 
 # ==============================================================
-# [TEST 32] SIMULTANEOUS READ/WRITE
-# Address       : 30
-# Old Data      : 0x7d
-# Write Data    : 0x7d
-# Read Data     : 0x7d
-# STATUS        : PASS
+# [TEST 33] WRITE OPERATION
+# Address       : 24
+# Write Data    : 0xeb
+# STATUS        : MEMORY UPDATED
 # ==============================================================
 # 
 # *************** SCOREBOARD SUMMARY ***************
-# Total Tests : 32
+# Total Tests : 33
 # Passed      : 25
 # Failed      : 1
 # **************************************************
@@ -1934,12 +2768,145 @@
 #  Operation      : IDLE
 #  Address Range  : lower_range
 #  Write Enable   : 1
-#  Read Enable    : 1
-#  Address        : 0x1e (30)
-#  Write Data     : 0x7d
-#  Read Data      : 0x7d
+#  Read Enable    : 0
+#  Address        : 0x18 (24)
+#  Write Data     : 0xeb
+#  Read Data      : 0xd6
 # ==============================================================
 # 
+# [1005] Driver: Waiting for packet...
+# [1005] Driver: Packet received
+# [1025] Driver: Waiting for packet...
+# [1025] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0xa (10)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 34] READ OPERATION
+# Address       : 10
+# Expected Data : 0x0
+# Actual Data   : 0x0
+# STATUS        : PASS
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 34
+# Passed      : 26
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0xa (10)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# [1045] Driver: Waiting for packet...
+# [1045] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x11 (17)
+#  Write Data     : 0x27
+#  Read Data      : 0x2e
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 35] WRITE OPERATION
+# Address       : 17
+# Write Data    : 0x27
+# STATUS        : MEMORY UPDATED
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 35
+# Passed      : 27
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x11 (17)
+#  Write Data     : 0x27
+#  Read Data      : 0x2e
+# ==============================================================
+# 
+# [1065] Driver: Waiting for packet...
+# [1065] Driver: Packet received
+# [1085] Driver: Waiting for packet...
+# [1085] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x2e
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 36] WRITE OPERATION
+# Address       : 0
+# Write Data    : 0x0
+# STATUS        : MEMORY UPDATED
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 36
+# Passed      : 28
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x2e
+# ==============================================================
+# 
+# [1105] Driver: Waiting for packet...
+# [1105] Driver: Packet received
 # 
 # ==============================================================
 #                  From Monitor
@@ -1948,24 +2915,24 @@
 #  Address Range  : lower_range
 #  Write Enable   : 1
 #  Read Enable    : 1
-#  Address        : 0x1e (30)
-#  Write Data     : 0x7d
-#  Read Data      : 0x7d
+#  Address        : 0x1c (28)
+#  Write Data     : 0x9b
+#  Read Data      : 0x9b
 # ==============================================================
 # 
 # 
 # ==============================================================
-# [TEST 33] SIMULTANEOUS READ/WRITE
-# Address       : 30
-# Old Data      : 0x7d
-# Write Data    : 0x7d
-# Read Data     : 0x7d
+# [TEST 37] SIMULTANEOUS READ/WRITE
+# Address       : 28
+# Old Data      : 0xb6
+# Write Data    : 0x9b
+# Read Data     : 0x9b
 # STATUS        : PASS
 # ==============================================================
 # 
 # *************** SCOREBOARD SUMMARY ***************
-# Total Tests : 33
-# Passed      : 26
+# Total Tests : 37
+# Passed      : 29
 # Failed      : 1
 # **************************************************
 # 
@@ -1977,12 +2944,1453 @@
 #  Address Range  : lower_range
 #  Write Enable   : 1
 #  Read Enable    : 1
+#  Address        : 0x1c (28)
+#  Write Data     : 0x9b
+#  Read Data      : 0x9b
+# ==============================================================
+# 
+# [1125] Driver: Waiting for packet...
+# [1125] Driver: Packet received
+# [1145] Driver: Waiting for packet...
+# [1145] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x1f (31)
+#  Write Data     : 0xf4
+#  Read Data      : 0x9b
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 38] WRITE OPERATION
+# Address       : 31
+# Write Data    : 0xf4
+# STATUS        : MEMORY UPDATED
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 38
+# Passed      : 30
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x1f (31)
+#  Write Data     : 0xf4
+#  Read Data      : 0x9b
+# ==============================================================
+# 
+# [1165] Driver: Waiting for packet...
+# [1165] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 1
+#  Address        : 0x1b (27)
+#  Write Data     : 0xfc
+#  Read Data      : 0xfc
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 39] SIMULTANEOUS READ/WRITE
+# Address       : 27
+# Old Data      : 0x0
+# Write Data    : 0xfc
+# Read Data     : 0xfc
+# STATUS        : PASS
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 39
+# Passed      : 31
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 1
+#  Address        : 0x1b (27)
+#  Write Data     : 0xfc
+#  Read Data      : 0xfc
+# ==============================================================
+# 
+# [1185] Driver: Waiting for packet...
+# [1185] Driver: Packet received
+# [1205] Driver: Waiting for packet...
+# [1205] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0xfc
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 40] IDLE OPERATION
+# Address       : 0
+# Expected Data : 0x0
+# Read Data     : 0xfc
+# STATUS        : IDLE
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 40
+# Passed      : 31
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0xfc
+# ==============================================================
+# 
+# [1225] Driver: Waiting for packet...
+# [1225] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x1f (31)
+#  Write Data     : 0x37
+#  Read Data      : 0xf4
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 41] READ OPERATION
+# Address       : 31
+# Expected Data : 0xf4
+# Actual Data   : 0xf4
+# STATUS        : PASS
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 41
+# Passed      : 32
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x1f (31)
+#  Write Data     : 0x37
+#  Read Data      : 0xf4
+# ==============================================================
+# 
+# [1245] Driver: Waiting for packet...
+# [1245] Driver: Packet received
+# [1265] Driver: Waiting for packet...
+# [1265] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0xd (13)
+#  Write Data     : 0x3
+#  Read Data      : 0xf4
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 42] IDLE OPERATION
+# Address       : 13
+# Expected Data : 0x0
+# Read Data     : 0xf4
+# STATUS        : IDLE
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 42
+# Passed      : 32
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0xd (13)
+#  Write Data     : 0x3
+#  Read Data      : 0xf4
+# ==============================================================
+# 
+# [1285] Driver: Waiting for packet...
+# [1285] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x1a
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 43] WRITE OPERATION
+# Address       : 0
+# Write Data    : 0x0
+# STATUS        : MEMORY UPDATED
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 43
+# Passed      : 33
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x1a
+# ==============================================================
+# 
+# [1305] Driver: Waiting for packet...
+# [1305] Driver: Packet received
+# [1325] Driver: Waiting for packet...
+# [1325] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 44] READ OPERATION
+# Address       : 0
+# Expected Data : 0x0
+# Actual Data   : 0x0
+# STATUS        : PASS
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 44
+# Passed      : 34
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# [1345] Driver: Waiting for packet...
+# [1345] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 45] WRITE OPERATION
+# Address       : 0
+# Write Data    : 0x0
+# STATUS        : MEMORY UPDATED
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 45
+# Passed      : 35
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# [1365] Driver: Waiting for packet...
+# [1365] Driver: Packet received
+# [1385] Driver: Waiting for packet...
+# [1385] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
 #  Address        : 0x1e (30)
-#  Write Data     : 0x7d
-#  Read Data      : 0x7d
+#  Write Data     : 0x3f
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 46] WRITE OPERATION
+# Address       : 30
+# Write Data    : 0x3f
+# STATUS        : MEMORY UPDATED
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 46
+# Passed      : 36
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x1e (30)
+#  Write Data     : 0x3f
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# [1405] Driver: Waiting for packet...
+# [1405] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x18 (24)
+#  Write Data     : 0xd2
+#  Read Data      : 0xd6
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 47] WRITE OPERATION
+# Address       : 24
+# Write Data    : 0xd2
+# STATUS        : MEMORY UPDATED
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 47
+# Passed      : 37
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x18 (24)
+#  Write Data     : 0xd2
+#  Read Data      : 0xd6
+# ==============================================================
+# 
+# [1425] Driver: Waiting for packet...
+# [1425] Driver: Packet received
+# [1445] Driver: Waiting for packet...
+# [1445] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x10 (16)
+#  Write Data     : 0x26
+#  Read Data      : 0xd6
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 48] WRITE OPERATION
+# Address       : 16
+# Write Data    : 0x26
+# STATUS        : MEMORY UPDATED
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 48
+# Passed      : 38
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x10 (16)
+#  Write Data     : 0x26
+#  Read Data      : 0xd6
+# ==============================================================
+# 
+# [1465] Driver: Waiting for packet...
+# [1465] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x4 (4)
+#  Write Data     : 0x1b
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 49] IDLE OPERATION
+# Address       : 4
+# Expected Data : 0xe0
+# Read Data     : 0x0
+# STATUS        : IDLE
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 49
+# Passed      : 38
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x4 (4)
+#  Write Data     : 0x1b
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# [1485] Driver: Waiting for packet...
+# [1485] Driver: Packet received
+# [1505] Driver: Waiting for packet...
+# [1505] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 50] WRITE OPERATION
+# Address       : 0
+# Write Data    : 0x0
+# STATUS        : MEMORY UPDATED
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 50
+# Passed      : 39
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# [1525] Driver: Waiting for packet...
+# [1525] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x4d
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 51] IDLE OPERATION
+# Address       : 0
+# Expected Data : 0x0
+# Read Data     : 0x4d
+# STATUS        : IDLE
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 51
+# Passed      : 39
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x4d
+# ==============================================================
+# 
+# [1545] Driver: Waiting for packet...
+# [1545] Driver: Packet received
+# [1565] Driver: Waiting for packet...
+# [1565] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0xf (15)
+#  Write Data     : 0xca
+#  Read Data      : 0x4d
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 52] IDLE OPERATION
+# Address       : 15
+# Expected Data : 0x0
+# Read Data     : 0x4d
+# STATUS        : IDLE
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 52
+# Passed      : 39
+# Failed      : 1
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0xf (15)
+#  Write Data     : 0xca
+#  Read Data      : 0x4d
+# ==============================================================
+# 
+# [1585] Driver: Waiting for packet...
+# [1585] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x2 (2)
+#  Write Data     : 0x30
+#  Read Data      : 0x4d
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 53] READ OPERATION
+# Address       : 2
+# Expected Data : 0x0
+# Actual Data   : 0x4d
+# STATUS        : FAIL
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 53
+# Passed      : 39
+# Failed      : 2
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x2 (2)
+#  Write Data     : 0x30
+#  Read Data      : 0x4d
+# ==============================================================
+# 
+# [1605] Driver: Waiting for packet...
+# [1605] Driver: Packet received
+# [1625] Driver: Waiting for packet...
+# [1625] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x9 (9)
+#  Write Data     : 0x40
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 54] READ OPERATION
+# Address       : 9
+# Expected Data : 0x0
+# Actual Data   : 0x0
+# STATUS        : PASS
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 54
+# Passed      : 40
+# Failed      : 2
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x9 (9)
+#  Write Data     : 0x40
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# [1645] Driver: Waiting for packet...
+# [1645] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x1c (28)
+#  Write Data     : 0x1b
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 55] IDLE OPERATION
+# Address       : 28
+# Expected Data : 0x9b
+# Read Data     : 0x0
+# STATUS        : IDLE
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 55
+# Passed      : 40
+# Failed      : 2
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x1c (28)
+#  Write Data     : 0x1b
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# [1665] Driver: Waiting for packet...
+# [1665] Driver: Packet received
+# [1685] Driver: Waiting for packet...
+# [1685] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 1
+#  Address        : 0x6 (6)
+#  Write Data     : 0x2b
+#  Read Data      : 0x2b
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 56] SIMULTANEOUS READ/WRITE
+# Address       : 6
+# Old Data      : 0x0
+# Write Data    : 0x2b
+# Read Data     : 0x2b
+# STATUS        : PASS
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 56
+# Passed      : 41
+# Failed      : 2
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 1
+#  Address        : 0x6 (6)
+#  Write Data     : 0x2b
+#  Read Data      : 0x2b
+# ==============================================================
+# 
+# [1705] Driver: Waiting for packet...
+# [1705] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x17 (23)
+#  Write Data     : 0xd3
+#  Read Data      : 0x2b
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 57] WRITE OPERATION
+# Address       : 23
+# Write Data    : 0xd3
+# STATUS        : MEMORY UPDATED
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 57
+# Passed      : 42
+# Failed      : 2
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x17 (23)
+#  Write Data     : 0xd3
+#  Read Data      : 0x2b
+# ==============================================================
+# 
+# [1725] Driver: Waiting for packet...
+# [1725] Driver: Packet received
+# [1745] Driver: Waiting for packet...
+# [1745] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x1f (31)
+#  Write Data     : 0x75
+#  Read Data      : 0xf4
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 58] READ OPERATION
+# Address       : 31
+# Expected Data : 0xf4
+# Actual Data   : 0xf4
+# STATUS        : PASS
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 58
+# Passed      : 43
+# Failed      : 2
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x1f (31)
+#  Write Data     : 0x75
+#  Read Data      : 0xf4
+# ==============================================================
+# 
+# [1765] Driver: Waiting for packet...
+# [1765] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 59] READ OPERATION
+# Address       : 0
+# Expected Data : 0x0
+# Actual Data   : 0x0
+# STATUS        : PASS
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 59
+# Passed      : 44
+# Failed      : 2
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# [1785] Driver: Waiting for packet...
+# [1785] Driver: Packet received
+# [1805] Driver: Waiting for packet...
+# [1805] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 1
+#  Address        : 0x9 (9)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 60] SIMULTANEOUS READ/WRITE
+# Address       : 9
+# Old Data      : 0x0
+# Write Data    : 0x0
+# Read Data     : 0x0
+# STATUS        : PASS
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 60
+# Passed      : 45
+# Failed      : 2
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 1
+#  Address        : 0x9 (9)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# [1825] Driver: Waiting for packet...
+# [1825] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 61] WRITE OPERATION
+# Address       : 0
+# Write Data    : 0x0
+# STATUS        : MEMORY UPDATED
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 61
+# Passed      : 46
+# Failed      : 2
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# [1845] Driver: Waiting for packet...
+# [1845] Driver: Packet received
+# [1865] Driver: Waiting for packet...
+# [1865] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 62] WRITE OPERATION
+# Address       : 0
+# Write Data    : 0x0
+# STATUS        : MEMORY UPDATED
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 62
+# Passed      : 47
+# Failed      : 2
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# [1885] Driver: Waiting for packet...
+# [1885] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 63] READ OPERATION
+# Address       : 0
+# Expected Data : 0x0
+# Actual Data   : 0x0
+# STATUS        : PASS
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 63
+# Passed      : 48
+# Failed      : 2
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# [1905] Driver: Waiting for packet...
+# [1905] Driver: Packet received
+# [1925] Driver: Waiting for packet...
+# [1925] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x12 (18)
+#  Write Data     : 0xdd
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 64] WRITE OPERATION
+# Address       : 18
+# Write Data    : 0xdd
+# STATUS        : MEMORY UPDATED
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 64
+# Passed      : 49
+# Failed      : 2
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 1
+#  Read Enable    : 0
+#  Address        : 0x12 (18)
+#  Write Data     : 0xdd
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# [1945] Driver: Waiting for packet...
+# [1945] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 65] IDLE OPERATION
+# Address       : 0
+# Expected Data : 0x0
+# Read Data     : 0x0
+# STATUS        : IDLE
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 65
+# Passed      : 49
+# Failed      : 2
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# [1965] Driver: Waiting for packet...
+# [1965] Driver: Packet received
+# [1985] Driver: Waiting for packet...
+# [1985] Driver: Packet received
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 66] IDLE OPERATION
+# Address       : 0
+# Expected Data : 0x0
+# Read Data     : 0x0
+# STATUS        : IDLE
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 66
+# Passed      : 49
+# Failed      : 2
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 0
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# [2005] Driver: Waiting for packet...
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 67] READ OPERATION
+# Address       : 0
+# Expected Data : 0x0
+# Actual Data   : 0x0
+# STATUS        : PASS
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 67
+# Passed      : 50
+# Failed      : 2
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 68] READ OPERATION
+# Address       : 0
+# Expected Data : 0x0
+# Actual Data   : 0x0
+# STATUS        : PASS
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 68
+# Passed      : 51
+# Failed      : 2
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 69] READ OPERATION
+# Address       : 0
+# Expected Data : 0x0
+# Actual Data   : 0x0
+# STATUS        : PASS
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 69
+# Passed      : 52
+# Failed      : 2
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+#                  From Monitor
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
+# ==============================================================
+# 
+# 
+# ==============================================================
+# [TEST 70] READ OPERATION
+# Address       : 0
+# Expected Data : 0x0
+# Actual Data   : 0x0
+# STATUS        : PASS
+# ==============================================================
+# 
+# *************** SCOREBOARD SUMMARY ***************
+# Total Tests : 70
+# Passed      : 53
+# Failed      : 2
+# **************************************************
+# 
+# 
+# ==============================================================
+#                  From Scoreboard
+# ==============================================================
+#  Operation      : IDLE
+#  Address Range  : lower_range
+#  Write Enable   : 0
+#  Read Enable    : 1
+#  Address        : 0x0 (0)
+#  Write Data     : 0x0
+#  Read Data      : 0x0
 # ==============================================================
 # 
 # ** Note: $finish    : Ram_top.sv(42)
-#    Time: 1015 ns  Iteration: 0  Instance: /ram_tb
-# End time: 23:40:55 on Jul 05,2026, Elapsed time: 0:00:01
+#    Time: 2115 ns  Iteration: 0  Instance: /ram_tb
+# 
+# ==================================================
+#         FUNCTIONAL COVERAGE REPORT
+# ==================================================
+#  Functional Coverage = 96.88%
+# ==================================================
+# 
+# End time: 01:08:19 on Jul 06,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 6

@@ -46,5 +46,14 @@ module ram_tb;
     $dumpfile("dump.vcd");
     $dumpvars;
   end
+
+final begin
+
+$display("\n==================================================");
+$display("        FUNCTIONAL COVERAGE REPORT");
+$display("==================================================");
+$display(" Functional Coverage = %0.2f%%", test.env.agent.drv.cvg.get_coverage());
+$display("==================================================\n");
+end
   
 endmodule

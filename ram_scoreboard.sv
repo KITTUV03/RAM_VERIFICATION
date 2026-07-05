@@ -134,6 +134,8 @@ class ram_scoreboard;
     $display("Failed      : %0d", fail_count);
     $display("**************************************************\n");
 
+
+
   endtask
 
 endclass
