@@ -1,0 +1,128 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/fetools/work_area/frontend/Batch_11/Kittu_Patel/System_Verilog/Project/RAM_VERIFICATION
+T_opt3
+!s110 1783275054
+Vk7QX4jPmGXIB9fPYYle?@1
+04 6 4 work ram_tb fast 0
+=1-6805caf5892e-6a4a9e2e-63bcd-d89c
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt3
+OE;O;10.6c;65
+Yintf
+Z2 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z3 !s110 1783274666
+!i10b 1
+!s100 @MMCLTXA4;1:k?[S`US3D3
+Ij<X<@WQdUR_liGSP_[1ZY3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 !s105 Ram_top_sv_unit
+S1
+R0
+w1783271700
+8ram_interface.sv
+Fram_interface.sv
+L0 2
+Z6 OE;L;10.6c;65
+r1
+!s85 0
+31
+Z7 !s108 1783274666.000000
+Z8 !s107 ram_test.sv|ram_env.sv|ram_agent.sv|ram_scoreboard.sv|ram_monitor.sv|ram_driver.sv|ram_full_random.sv|ram_idle_test.sv|ram_sim_r_w.sv|read_test_case.sv|write_test_case.sv|ram_generator.sv|ram_transaction.sv|ram_interface.sv|ram_defines.svh|ram_package.sv|Ram_design.sv|Ram_top.sv|
+Z9 !s90 Ram_top.sv|
+!i113 0
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+Xram_pkg
+!s115 intf
+R2
+R3
+!i10b 1
+!s100 nb]?LWN>ZEMWK>hbTaNAc3
+I^X5E]]4I^Z;Gi`8SAcYh_2
+V^X5E]]4I^Z;Gi`8SAcYh_2
+S1
+R0
+w1783273473
+Fram_package.sv
+Fram_transaction.sv
+Fram_generator.sv
+Fwrite_test_case.sv
+Fread_test_case.sv
+Fram_sim_r_w.sv
+Fram_idle_test.sv
+Fram_full_random.sv
+Fram_driver.sv
+Fram_monitor.sv
+Fram_scoreboard.sv
+Fram_agent.sv
+Fram_env.sv
+Fram_test.sv
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1
+vram_tb
+R2
+DXx4 work 7 ram_pkg 0 22 ^X5E]]4I^Z;Gi`8SAcYh_2
+R3
+!i10b 1
+!s100 ZVfz;]STTg0PS2;oE7e<82
+I?P6Q>fVHDD@L@3DzGzC6e1
+R4
+R5
+S1
+R0
+w1783271091
+8Ram_top.sv
+FRam_top.sv
+L0 14
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1
+vsingle_port
+R2
+R3
+!i10b 1
+!s100 ZHK9];YgAjoiB=YV94klA1
+I`7@]6FS7D=1jTTfg@Ti?A0
+R4
+R5
+S1
+R0
+w1783271015
+8Ram_design.sv
+FRam_design.sv
+L0 5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R1

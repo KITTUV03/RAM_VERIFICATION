@@ -1,0 +1,28 @@
+$date
+	Sun Jul  5 23:40:55 2026
+$end
+$version
+	QuestaSim Version 10.6c
+$end
+$timescale
+	1ns
+$end
+
+$scope module ram_tb $end
+
+$scope task apply_reset $end
+$upscope $end
+
+$scope module dut $end
+$upscope $end
+$upscope $end
+
+$scope begin ram_pkg $end
+$upscope $end
+
+$scope begin std $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+$end

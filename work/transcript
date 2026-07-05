@@ -1,0 +1,7 @@
+# vsim -coverage -c work.ram_tb "+Random" 
+# Start time: 23:28:12 on Jul 05,2026
+# ** Error (suppressible): (vsim-19) Failed to access library 'work' at "work".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 23:28:12 on Jul 05,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
