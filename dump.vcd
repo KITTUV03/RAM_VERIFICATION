@@ -1,5 +1,5 @@
 $date
-	Mon Jul  6 13:12:09 2026
+	Mon Jul  6 15:12:24 2026
 $end
 $version
 	QuestaSim Version 10.6c
@@ -14,6 +14,15 @@ $scope task apply_reset $end
 $upscope $end
 
 $scope module dut $end
+
+$scope module RAM_ASSERTIONS $end
+
+$scope begin A_NO_SIM_RW $end
+$upscope $end
+
+$scope begin A_VALID_ADDR $end
+$upscope $end
+$upscope $end
 $upscope $end
 $upscope $end
 

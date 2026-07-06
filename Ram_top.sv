@@ -12,6 +12,7 @@
 
 `include "Ram_design.sv"
 `include "ram_package.sv"
+`include "ram_assertion.sv"
 module ram_tb;
   import ram_pkg::*;
   bit clk;
@@ -25,9 +26,17 @@ module ram_tb;
   RAM dut(.clk(clk),.reset(reset),.data_in(inf.write_data),.data_out(inf.read_data),.write_enb(inf.write_enable),.read_enb(inf.read_enable),.address(inf.address));
 
 
+  bind RAM ram_assertions RAM_ASSERTIONS (
+    .clk          (clk),
+    .reset        (reset),
+    .write_enable (write_enable),
+    .read_enable  (read_enable),
+    .address      (address)
+);
+
   task apply_reset;
     reset=1'b0;
-    repeat(2) @(posedge clk);
+    repeat(3) @(posedge clk);
     reset=1'b1;
   endtask
 

@@ -19,6 +19,15 @@ class full_random extends ram_generator;
         packet.print("READ TEST");
          count++;
       end
+
+  repeat(`NUM_OF_TRANS)
+      begin
+        packet=new();
+        packet.randomize();
+        gen2drv.put(packet);
+        packet.print("READ TEST");
+         count++;
+      end
     
     
 //     repeat(1)

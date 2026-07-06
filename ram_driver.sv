@@ -10,6 +10,19 @@ covergroup cvg;
         bins mid_address[]    = {[16:25]};
         bins higher_address[] = {[26:31]};
     }
+
+    coverpoint {packet.write_enable, packet.read_enable}
+{
+    ignore_bins bn = {2'b11};
+}
+
+coverpoint dvif.reset {
+    bins reset_asserted   = {0};
+    bins reset_deasserted = {1};
+  }
+
+
+   
 endgroup
 
 function new();
