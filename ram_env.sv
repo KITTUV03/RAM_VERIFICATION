@@ -3,7 +3,7 @@ class ram_env;
   ram_scoreboard sco;
   virtual intf.mon_mp mvif;
   virtual intf.drv_mp dvif;
-
+  event finish_test;
   
   function void build();
     agent=new();
@@ -24,10 +24,8 @@ class ram_env;
     agent.mon.run();
     sco.run();
     join_any
-
-    #1100;
-    
-
+    wait(sco.overall_count == agent.gen.count);
+    -> finish_test;
     
   endtask
   

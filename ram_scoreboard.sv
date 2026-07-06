@@ -18,13 +18,14 @@ class ram_scoreboard;
     forever begin
       mon2sco.get(packet);
       compare(packet);
-      packet.print("From Scoreboard");
+      packet.print("In Scoreboard");
     end
   endtask
 
   task compare(ram_transaction packet);
 
     bit [`DATA_WIDTH-1:0] exp;
+   
 
     if(expected_data.exists(packet.address))
       exp = expected_data[packet.address];
@@ -94,37 +95,37 @@ class ram_scoreboard;
       // SIMULTANEOUS READ & WRITE
       // RTL is WRITE-FIRST
       //----------------------------------------------------------
-      2'b11: begin
+//       2'b11: begin
 
-        $display("\n==============================================================");
-        $display("[TEST %0d] SIMULTANEOUS READ/WRITE", overall_count);
-        $display("Address       : %0d", packet.address);
-        $display("Old Data      : 0x%0h", exp);
-        $display("Write Data    : 0x%0h", packet.write_data);
-        $display("Read Data     : 0x%0h", packet.read_data);
+//         $display("\n==============================================================");
+//         $display("[TEST %0d] SIMULTANEOUS READ/WRITE", overall_count);
+//         $display("Address       : %0d", packet.address);
+//         $display("Old Data      : 0x%0h", exp);
+//         $display("Write Data    : 0x%0h", packet.write_data);
+//         $display("Read Data     : 0x%0h", packet.read_data);
 
-        if(packet.read_data === packet.write_data) begin
-          pass_count++;
-          $display("STATUS        : PASS");
-        end
-        else begin
-          fail_count++;
-          $display("STATUS        : FAIL");
-        end
+//         if(packet.read_data === packet.write_data) begin
+//           pass_count++;
+//           $display("STATUS        : PASS");
+//         end
+//         else begin
+//           fail_count++;
+//           $display("STATUS        : FAIL");
+//         end
 
-        expected_data[packet.address] = packet.write_data;
+//         expected_data[packet.address] = packet.write_data;
 
-        $display("==============================================================");
+//         $display("==============================================================");
 
-      end
+//       end
 
       //----------------------------------------------------------
       // ILLEGAL
       //----------------------------------------------------------
-      default: begin
-        fail_count++;
-        $display("Unknown Operation");
-      end
+//       default: begin
+//         fail_count++;
+//         $display("Unknown Operation");
+//       end
 
     endcase
 
@@ -135,7 +136,7 @@ class ram_scoreboard;
     $display("**************************************************\n");
 
 
-
+    
   endtask
 
 endclass

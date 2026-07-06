@@ -16,15 +16,18 @@ class ram_monitor;
     end
   endtask
   
-  task get_from_dut();
-    repeat(2) @(mvif.mon_cb);
-    packet.address  = mvif.mon_cb.address;
-    packet.write_data = mvif.mon_cb.write_data;
-    packet.write_enable = mvif.mon_cb.write_enable;
-    packet.read_enable = mvif.mon_cb.read_enable;
+ task get_from_dut();
+
+    @(mvif.mon_cb);
+    packet.address       = mvif.mon_cb.address;
+    packet.write_enable  = mvif.mon_cb.write_enable;
+    packet.read_enable   = mvif.mon_cb.read_enable;
+    packet.write_data    = mvif.mon_cb.write_data;
     @(mvif.mon_cb);
     packet.read_data = mvif.mon_cb.read_data;
-    packet.print("From Monitor");
-  endtask
+
+    packet.print("FROM MONITOR");
+
+endtask
   
 endclass

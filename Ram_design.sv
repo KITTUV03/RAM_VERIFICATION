@@ -1,50 +1,60 @@
-`define DEPTH      32
-`define WIDTH       8
-`define ADD_WIDTH   5
+/************************************************************************
+Copyright 2013-2014 - RV-VLSI. All Rights Reserved.
+*************************************************************************
+Author:         vaibbhav@rv-vlsi.com
 
-module single_port (
-    input                           clk,
-    input                           reset,
-    input                           re,
-    input                           we,
-    input  [`ADD_WIDTH-1:0]         address,
-    input  [`WIDTH-1:0]             data_in,
-    output reg [`WIDTH-1:0]         data_out
-);
+Filename:	ram.sv   
 
-integer i;
+Date:   	1st July 2014
 
-reg [`WIDTH-1:0] mem [0:`DEPTH-1];
+Version:	1.0
+************************************************************************/
+module RAM(
+          clk, // Clk input
+          reset, //Reset input active low
+          address, // Address Input
+          data_in, // Data in 
+          write_enb, // Write Enable
+          read_enb,  // Read Enable
+          data_out   // Data out
+          );          
 
-always @(posedge clk) begin
-    if (reset) begin
-        for (i = 0; i < `DEPTH; i = i + 1)
-            mem[i] <= '0;
+//Input port declaration
+ input [4:0] address;
+ input write_enb;
+ input read_enb; 
+ input [7:0] data_in;
+ input clk;
+ input reset; 
 
-        data_out <= '0;
-    end
-    else begin
-        case ({we, re})
+//Output port declaration 
+ output [7:0] data_out;
+ 
+//Variable declarations 
+ reg [7:0] data_out ;
+ reg [7:0] memory [0:31];
 
-            2'b01: begin
-                data_out <= mem[address];
-            end
+//Memory Write Block Write Operation : When write_enb = 1,
+always @(posedge clk)
+ begin 
+  if(!reset)
+   memory[address] <= 8'bz;
+  else if(write_enb && !read_enb) 
+   memory[address] <= data_in;
+ end 
+ 
+//Memory Read Block  Read Operation : When read_enb=1
+always @(posedge clk)
+ begin
+  if(!reset) 
+    data_out <= 8'bz;
+  else if(read_enb && !write_enb)
+    data_out <= memory[address];
+  else
+    data_out <= 8'bz;
+ end
+endmodule 
 
-            2'b10: begin
-                mem[address] <= data_in;
-            end
 
-            2'b11: begin
-                mem[address] <= data_in;
-                data_out     <= data_in;   // Write-first behavior
-            end
 
-            default: begin
-                data_out <= data_out;      // Hold previous value
-            end
 
-        endcase
-    end
-end
-
-endmodule
