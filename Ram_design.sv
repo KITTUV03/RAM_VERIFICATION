@@ -2,7 +2,6 @@
 Copyright 2013-2014 - RV-VLSI. All Rights Reserved.
 *************************************************************************
 Author:         vaibbhav@rv-vlsi.com
-
 Filename:	ram.sv   
 
 Date:   	1st July 2014
