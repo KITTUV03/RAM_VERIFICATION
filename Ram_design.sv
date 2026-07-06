@@ -9,52 +9,47 @@ Date:   	1st July 2014
 
 Version:	1.0
 ************************************************************************/
-module RAM(
-          clk, // Clk input
-          reset, //Reset input active low
-          address, // Address Input
-          data_in, // Data in 
-          write_enb, // Write Enable
-          read_enb,  // Read Enable
-          data_out   // Data out
-          );          
+module RAM (
+    input              clk,
+    input              reset,      // Active-low reset
+    input      [4:0]   address,
+    input      [7:0]   data_in,
+    input              write_enb,
+    input              read_enb,
+    output reg [7:0]   data_out
+);
 
-//Input port declaration
- input [4:0] address;
- input write_enb;
- input read_enb; 
- input [7:0] data_in;
- input clk;
- input reset; 
+reg [7:0] memory [0:31];
+integer i;
 
-//Output port declaration 
- output [7:0] data_out;
- 
-//Variable declarations 
- reg [7:0] data_out ;
- reg [7:0] memory [0:31];
+always @(posedge clk) begin
 
-//Memory Write Block Write Operation : When write_enb = 1,
-always @(posedge clk)
- begin 
-  if(!reset)
-   memory[address] <= 8'bz;
-  else if(write_enb && !read_enb) 
-   memory[address] <= data_in;
- end 
- 
-//Memory Read Block  Read Operation : When read_enb=1
-always @(posedge clk)
- begin
-  if(!reset) 
-    data_out <= 8'bz;
-  else if(read_enb && !write_enb)
-    data_out <= memory[address];
-  else
-    data_out <= 8'bz;
- end
-endmodule 
+    // Active-low reset
+    if (!reset) begin
 
+        // Reset entire memory
+        for (i = 0; i < 32; i = i + 1)
+            memory[i] <= 8'bz;
 
+        data_out <= 8'bz;
+    end
 
+    // Write only
+    else if (write_enb && !read_enb) begin
+        memory[address] <= data_in;
+    end
+
+    // Read only
+    else if (read_enb && !write_enb) begin
+        data_out <= memory[address];
+    end
+          
+    // Idle
+    else begin
+        data_out <= data_out;
+    end
+
+end
+
+endmodule
 
